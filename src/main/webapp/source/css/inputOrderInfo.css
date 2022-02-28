@@ -1,0 +1,26 @@
+/* #big{ */
+/* 	display: flex; */
+/* 	justify-content:center; */
+/* 	align-items:center */
+/* } */
+/* #big{ */
+/* 	width:100px; */
+/* 	height:100px; */
+/* 	line-height:100px; */
+/* 	max-width:100%; */
+/* 	text-align: center; */
+/* 	background-color:blue; */
+/* } */
+#payWay{
+	border: 1px solid green;
+/* 	background-color:blue; */
+	width:500px;
+/* 	text-align: center */
+
+}
+#peopleInfo{
+	border: 1px solid green;
+/* 	background-color:pink; */
+	width:500px;
+/* 	text-align: center */
+}

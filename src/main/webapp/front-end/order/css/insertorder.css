@@ -1,0 +1,33 @@
+
+#info{
+	
+	margin: 10px 0 0 30px;
+	width:90%;
+	
+}
+#info td{
+	border:1px solid black;
+	vertical-align:top;
+}
+#comde{
+	left:100px;
+	border-collapse:collapse;
+	}
+#comde th{
+	width:150px;
+}
+#comde tr:nth-child(even){
+ 	background-color: #f1f3f5; 
+ 	margin-top:2px;
+	}
+#comde td{
+	text-align:center;
+	border:1px solid black;
+}
+.hidden{
+display:none;
+}
+.myimg{
+	width:50px;
+	height:auto;
+}

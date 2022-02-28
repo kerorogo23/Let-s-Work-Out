@@ -1,0 +1,48 @@
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+ <div class="page">
+
+  <%if (rowsPerPage<rowNumber) {%>
+
+        <A href="<%=request.getRequestURI()%>?whichPage=1">
+        <img
+        src="<%=request.getContextPath()%>/front-end/pic/left2.png"
+        alt=""
+        class="page__icon"
+      /></A>&nbsp;
+        <A href="<%=request.getRequestURI()%>?whichPage=<%=whichPage-1%>">
+        <img
+        src="<%=request.getContextPath()%>/front-end/pic/left.png"
+        alt=""
+        class="page__icon page__left"
+      /></A>&nbsp;
+ 
+  	<h4 class="page__number" color:#48d494>第<%=whichPage%>/<%=pageNumber%>頁</h4>&nbsp;
+       <A href="<%=request.getRequestURI()%>?whichPage=<%=whichPage+1%>">
+        	<img
+       	 	src="<%=request.getContextPath()%>/front-end/pic/right.png"
+        	alt=""
+        	class="page__icon page__right"/>
+      </A>&nbsp;
+        <A href="<%=request.getRequestURI()%>?whichPage=<%=pageNumber%>">
+        <img
+        src="<%=request.getContextPath()%>/front-end/pic/right2.png"
+        alt=""
+        class="page__icon"
+      /></A>&nbsp;
+  <%}%>  
+  </div>
+  
+
+
+<div class="jump">
+  <%if (pageNumber>1) {%>
+    <FORM METHOD="post" ACTION="<%=request.getRequestURI()%>">   
+       <select size="1" name="whichPage" class="jump__box">
+         <%for (int i=1; i<=pageNumber; i++){%>
+            <option value="<%=i%>">跳至第<%=i%>頁
+         <%}%> 
+       </select>
+       <input type="submit" value="GO!" class="btn">  
+    </FORM>
+  <%}%>
+ </div>
